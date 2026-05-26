@@ -1,5 +1,5 @@
 import os
-from scraper_jd import JDScraper
+#from scraper_jd import JDScraper
 from scraper_taobao import TaobaoScraper
 from scraper_tmall import TmallScraper
 import pandas as pd
@@ -25,7 +25,7 @@ def main(prefix, sleep_time, headless, platforms):
 
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    platform_classes = {'jd': JDScraper, 'taobao': TaobaoScraper, 'tmall': TmallScraper}
+    platform_classes = {'taobao': TaobaoScraper, 'tmall': TmallScraper}
     platforms = [platform_classes[p](sleep_time=sleep_time, products_limit=5) for p in platforms]
 
     # load df catalog and get products list and promo prices
