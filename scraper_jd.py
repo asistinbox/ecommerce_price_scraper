@@ -1,6 +1,6 @@
 from scraper_base import BaseScraper
 import time
-from playwright_stealth import stealth_sync
+from playwright_stealth.sync import stealth_sync
 from playwright.sync_api import sync_playwright
 
 
