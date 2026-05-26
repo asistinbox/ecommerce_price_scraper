@@ -1,5 +1,4 @@
 import os
-#from scraper_jd import JDScraper
 from scraper_taobao import TaobaoScraper
 from scraper_tmall import TmallScraper
 import pandas as pd
